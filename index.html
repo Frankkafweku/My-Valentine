@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+    <div class="container">
+        <div id="layer1" class="layer active">
+            <!-- <div class="graphic">💌</div> -->
+            <img src="pic1" alt="Our Memory" class="proposal-img">
+            <h1>Hey Sunshine💍❤️❣️...</h1>
+            <p>I have a very important question to ask you. Are you Ready?</p>
+            <div class="btn-container">
+                <button class="btn-yes" onclick="nextLayer(2)">I'm Ready!</button>
+            </div>
+        </div>
+
+        <div id="layer2" class="layer">
+            <!-- <div class="graphic">✨</div> -->
+            <img src="pic2" alt="Our Memory" class="proposal-img">
+            <h1>Before I ask...</h1>
+            <p>I just wanted to say that you are the best thing to ever happen to me. 
+                You make my life brighter just by being in it.
+            you are the person i want to spend the rest of my life with</p>
+            <div class="btn-container">
+                <button class="btn-yes" onclick="nextLayer(3)">Continue! 🥺</button>
+            </div>
+        </div>
+
+        <div id="layer3" class="layer">
+            <!-- <div class="graphic">🫂</div> -->
+            <img src="pic4" alt="Our Memory" class="proposal-img">
+            <h1>Just one more thing...</h1>
+            <p>Even on your bad days when you give me this look, my love you is 
+                still at 100% because i know you are just a girl who has emotions
+                too many many emotions but i dont care.
+            </p>
+            <div class="btn-container">
+                <button class="btn-yes" onclick="nextLayer(4)">Keep going... ❤️</button>
+            </div>
+        </div>
+
+        <div id="layer4" class="layer">
+            <!-- <div class="graphic">🧸</div> -->
+            <img src="pic5" alt="The Moment" class="proposal-img">
+            <h1>Love of my life!</h1>
+            <p>I think it's finally time I asked you. Will you be my Valentine?</p>
+            <div class="btn-container">
+                <button class="btn-yes" onclick="nextLayer(5)">Yes!</button>
+                <button id="noBtn" class="btn-no" onmouseover="moveNoButton()">No</button>
+            </div>
+        </div>
+
+        <div id="layer5" class="layer">
+            <div class="graphic">💖</div>
+            <img src="pic6" alt="Us" class="proposal-img">
+            <h1>YAY! ✨</h1>
+            <p>You've made me the happiest person! I can't wait to spend Valentine's Day with you.</p>
+            <p><strong>I love you!</strong></p>
+            <div class="graphic">👩‍❤️‍👨</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>
